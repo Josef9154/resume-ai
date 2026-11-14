@@ -19,7 +19,7 @@ class ProfileAnswers:
 
     def revision(self):
         digest = hashlib.sha256()
-        for name in ("resume.txt", "about_me.txt", "profile_answers.json"):
+        for name in ("resume.txt", "about_me.txt", "profile_answers.json", "persona.txt"):
             path = self.root / name
             digest.update(path.read_bytes() if path.exists() else b"")
         return digest.hexdigest()

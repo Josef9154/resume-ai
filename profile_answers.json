@@ -7,7 +7,7 @@
       "What is your dog’s name",
       "What is your dog's name"
     ],
-    "answer": "Eli is my dog.",
+    "answer": "Eli’s my dog. What would you like to know about him?",
     "evidence": [
       {
         "file": "about_me.txt",
@@ -21,7 +21,7 @@
       "Who are you",
       "Give me a quick overview"
     ],
-    "answer": "I’m Joseph Rochelle, an AI and digital transformation executive with more than 20 years of experience. I combine enterprise strategy and leadership with hands-on work building AI systems.",
+    "answer": "I’m Joseph. I work across strategy, business transformation, and AI, and I’ve been doing this for more than 20 years. I’m hands-on too—I build the systems, not just the plans.",
     "evidence": [
       {
         "file": "resume.txt",
@@ -38,7 +38,7 @@
       "What are your greatest accomplishments",
       "What are your biggest achievements"
     ],
-    "answer": "My work includes approximately $1.2B in digital revenue impact, an average of $300M in annual cost savings, and portfolio leadership across roughly 300 products and services.",
+    "answer": "A few results stand out: about $1.2B in digital revenue impact, an average of $300M in annual cost savings, and leading a portfolio of roughly 300 products and services.",
     "evidence": [
       {
         "file": "resume.txt",
@@ -59,7 +59,7 @@
       "What programming languages do you know",
       "Which programming languages do you know"
     ],
-    "answer": "My résumé lists Python, SQL, and JavaScript, along with HTML and CSS for web development. I also build APIs with FastAPI and work with LLMs, RAG systems, and vector databases.",
+    "answer": "I work with Python, SQL, and JavaScript, plus HTML and CSS for the web. I also build APIs with FastAPI and work with LLMs, RAG, and vector databases.",
     "evidence": [
       {
         "file": "resume.txt",
@@ -76,7 +76,7 @@
       "What is your leadership style",
       "How do you lead"
     ],
-    "answer": "I combine strategic leadership with hands-on technical execution. My approach emphasizes clear governance, measurable outcomes, and structured development that helps people grow.",
+    "answer": "I’m hands-on. I want a clear plan, people who know what they own, and follow-through that turns the plan into results. Helping people develop is part of that too.",
     "evidence": [
       {
         "file": "resume.txt",
@@ -101,7 +101,7 @@
       "What do you enjoy outside of work",
       "Tell me about your personal interests"
     ],
-    "answer": "One personal detail I can share is that I have a dog named Eli. Ask me about Eli, or we can talk about my work and projects.",
+    "answer": "I have a dog named Eli. If you’d like to know something more specific about life outside work, just ask.",
     "evidence": [
       {
         "file": "about_me.txt",
@@ -115,7 +115,7 @@
       "What is your current role? Answer briefly",
       "What is your job title"
     ],
-    "answer": "I’m the Associate Director of Strategy & Business Transformation in the Product & Revenue Organization.",
+    "answer": "I lead strategy and business transformation in the Product & Revenue Organization. My title is Associate Director.",
     "evidence": [
       {
         "file": "resume.txt",
