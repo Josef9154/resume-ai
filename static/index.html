@@ -56,6 +56,7 @@
 
             chat.appendChild(msg);
             chat.scrollTop = chat.scrollHeight;
+            return msg;
         }
 
         function setBusy(isBusy) {
@@ -117,23 +118,50 @@
                         "Content-Type": "application/json"
                     },
                     body: JSON.stringify({
-                        question: question
+                        question: question,
+                        stream: true
                     })
                 });
 
                 if (!response.ok) {
-                    throw new Error(
-                        `The server returned status ${response.status}`
-                    );
+                    if (response.status === 429) {
+                        addMessage("ai", "I’m answering another question right now. Please try again shortly.");
+                        return;
+                    }
+                    throw new Error(`The server returned status ${response.status}`);
                 }
 
-                const data = await response.json();
-
-                addMessage(
-                    "ai",
-                    data.answer ||
-                    "Joseph:\n\n• I could not generate a response."
-                );
+                if (response.headers.get("content-type")?.includes("application/x-ndjson")) {
+                    const message = addMessage("ai", "Preparing your answer…");
+                    const reader = response.body.getReader();
+                    const decoder = new TextDecoder();
+                    let pending = "", answer = "", completed = false;
+                    while (true) {
+                        const {value, done} = await reader.read();
+                        pending += decoder.decode(value, {stream: !done});
+                        const lines = pending.split("\n");
+                        pending = lines.pop();
+                        for (const line of lines) {
+                            if (!line.trim()) continue;
+                            const item = JSON.parse(line);
+                            if (item.delta) {
+                                answer += item.delta;
+                                message.textContent = answer;
+                                chat.scrollTop = chat.scrollHeight;
+                            }
+                            if (item.error) {
+                                message.textContent = (answer ? answer + "\n\n" : "") + item.error;
+                                completed = true;
+                            }
+                            if (item.done) completed = true;
+                        }
+                        if (done) break;
+                    }
+                    if (!completed) message.textContent = (answer ? answer + "\n\n" : "") + "The response was interrupted. Please try again.";
+                } else {
+                    const data = await response.json();
+                    addMessage("ai", data.answer || "I could not generate a response. Please try again.");
+                }
             } catch (error) {
                 console.error(error);
 

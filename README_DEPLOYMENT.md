@@ -1,6 +1,6 @@
 # OVH resume deployment
 The existing payments VPS hosts the resume as an isolated service on localhost:8200.
-Ollama uses qwen3:1.7b on localhost:11434; model memory and CPU are capped.
+Ollama uses qwen2.5:1.5b on localhost:11434; model memory and CPU are capped.
 Server retrieval uses the resume.txt and optional about_me.txt source directly with a low-memory term index. FAISS remains available for local use.
 
 ## Updates from VS Code or Codex
@@ -18,4 +18,4 @@ Payments services and databases are independent and must not be modified.
 
 Public URL: https://api.mycodeexperience.com/JosephRochelle/
 Health: https://api.mycodeexperience.com/JosephRochelle/health
-Current Qwen model: qwen3:1.7b (CPU). Single active AI request; retry if busy.
+Current Qwen model: qwen2.5:1.5b (CPU). Single active AI request; retry if busy.

@@ -1,11 +1,12 @@
 import os
+import json
 from functools import lru_cache
 from pathlib import Path
 
 import requests
 from dotenv import load_dotenv
 from fastapi import FastAPI, HTTPException
-from fastapi.responses import FileResponse
+from fastapi.responses import FileResponse, StreamingResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 from threading import BoundedSemaphore
@@ -103,6 +104,7 @@ CHAT_SLOT = BoundedSemaphore(1)
 
 class Query(BaseModel):
     question: str = Field(min_length=1, max_length=4000)
+    stream: bool = False
 
 
 # =========================================================
@@ -113,7 +115,7 @@ OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "").strip()
 OPENAI_MODEL = os.getenv("OPENAI_MODEL", "gpt-3.5-turbo")
 
 OLLAMA_URL = os.getenv("OLLAMA_URL", "").strip()
-OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "qwen3:1.7b")
+OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "qwen2.5:1.5b")
 
 
 def call_openai(prompt: str) -> str:
@@ -177,6 +179,40 @@ def call_openai(prompt: str) -> str:
         )
 
 
+def stream_ollama(prompt: str):
+    """Yield text as it is generated; always release the shared inference slot."""
+    def event(value):
+        return json.dumps(value, ensure_ascii=False) + "\n"
+    try:
+        payload = {
+            "model": OLLAMA_MODEL, "prompt": prompt, "stream": True,
+            "think": False, "keep_alive": "30m",
+            "options": {"temperature": 0.3, "top_p": 0.9, "num_ctx": 2048,
+                        "num_predict": 220, "num_thread": 1},
+        }
+        with requests.post(OLLAMA_URL, json=payload, stream=True, timeout=(5, 90)) as response:
+            response.raise_for_status()
+            completed = False
+            for line in response.iter_lines(chunk_size=64):
+                if not line:
+                    continue
+                item = json.loads(line)
+                if item.get("error"):
+                    raise ValueError("Model response error")
+                if item.get("response"):
+                    yield event({"delta": item["response"]})
+                if item.get("done"):
+                    completed = True
+                    yield event({"done": True})
+                    break
+            if not completed:
+                yield event({"error": "The response was interrupted. Please try again."})
+    except (requests.RequestException, ValueError):
+        yield event({"error": "The assistant is unavailable right now. Please try again shortly."})
+    finally:
+        CHAT_SLOT.release()
+
+
 def call_ollama(prompt: str) -> str:
     if not OLLAMA_URL:
         return call_openai(prompt)
@@ -186,13 +222,13 @@ def call_ollama(prompt: str) -> str:
         "prompt": prompt,
         "stream": False,
         "think": False,
-        "keep_alive": "5m",
+        "keep_alive": "30m",
         "options": {
             "temperature": 0.3,
             "top_p": 0.9,
-            "num_ctx": 3072,
+            "num_ctx": 2048,
             "num_predict": 220,
-            "num_thread": 2,
+            "num_thread": 1,
         },
     }
 
@@ -655,6 +691,9 @@ def chat(query: Query):
 
     if not CHAT_SLOT.acquire(blocking=False):
         raise HTTPException(status_code=429, detail="The assistant is answering another question. Please try again shortly.")
+    if query.stream and OLLAMA_URL:
+        return StreamingResponse(stream_ollama(prompt), media_type="application/x-ndjson",
+                                 headers={"Cache-Control": "no-store", "X-Accel-Buffering": "no"})
     try:
         answer = call_ollama(prompt)
     finally:
