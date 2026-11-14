@@ -35,7 +35,7 @@ class StreamingTests(unittest.TestCase):
         import main
         response = MagicMock()
         response.__enter__.return_value = response
-        response.iter_lines.return_value = [b'{"response":"Joseph: "}', b'{"response":"Hello", "done":true}']
+        response.iter_lines.return_value = [b'{"message":{"content":"Joseph: "}}', b'{"message":{"content":"Hello"}, "done":true}']
         self.assertTrue(main.CHAT_SLOT.acquire(blocking=False))
         with patch.object(main.requests, "post", return_value=response):
             events = [json.loads(line) for line in main.stream_ollama("test")]
@@ -60,7 +60,7 @@ class StreamingTests(unittest.TestCase):
         import main
         response = MagicMock()
         response.__enter__.return_value = response
-        response.iter_lines.return_value = [b'{"response":"Hello"}', b'{"done":true}']
+        response.iter_lines.return_value = [b'{"message":{"content":"Hello"}}', b'{"done":true}']
         self.assertTrue(main.CHAT_SLOT.acquire(blocking=False))
         with patch.object(main.requests, "post", return_value=response):
             stream = main.stream_ollama("test")
