@@ -1,6 +1,4 @@
-"""Low-memory, deterministic résumé retrieval for the shared 4 GB VPS.
-The local FAISS option remains available; server deployment uses this index.
-"""
+"""Low-memory section-aware retrieval; never discard headings or missing matches."""
 import math
 import re
 from collections import Counter
@@ -13,21 +11,38 @@ class TextResumeIndex:
             path = root / name
             if not path.exists():
                 continue
-            text = path.read_text(encoding="utf-8")
-            for section in re.split(r"\n\s*\n", text):
-                for start in range(0, len(section), 1800):
-                    chunk = section[start:start + 1800].strip()
-                    if chunk:
-                        self.documents.append(SimpleNamespace(page_content=chunk, metadata={"source_name": name, "content_type": "profile"}))
+            heading, parts = "", []
+            def flush():
+                if parts:
+                    text = (heading + "\n" + "\n\n".join(parts)).strip()
+                    self.documents.append(SimpleNamespace(page_content=text, metadata={"source_name": name, "content_type": "profile"}))
+            for block in re.split(r"\n\s*\n", path.read_text(encoding="utf-8")):
+                block = block.strip()
+                if not block:
+                    continue
+                if block.isupper() and len(block) < 100:
+                    flush()
+                    heading, parts = block, []
+                else:
+                    if sum(map(len, parts)) + len(block) > 2200:
+                        flush()
+                        parts = []
+                    parts.append(block)
+            flush()
         if not self.documents:
             raise ValueError("No résumé source documents found")
         self.tokens = [Counter(re.findall(r"[a-z0-9]+", d.page_content.lower())) for d in self.documents]
+        self.idf = {t: math.log(1 + len(self.tokens)/(1 + sum(t in c for c in self.tokens))) for c in self.tokens for t in c}
 
     def similarity_search(self, question, k=6):
-        stop = {"what", "are", "your", "about", "tell", "the", "and", "you", "me", "do", "is", "of", "a", "to"}
+        stop = {"what", "are", "your", "about", "tell", "the", "and", "you", "me", "do", "is", "of", "a", "to", "how", "can", "i", "please", "which"}
         query = set(re.findall(r"[a-z0-9]+", question.lower())) - stop
+        for group in ({"education","degree","degrees","university","studied"}, {"pet","dog","eli"}, {"leadership","lead","style","governance"}, {"languages","programming","python","javascript"}, {"role","title","current"}):
+            if query & group:
+                query |= group
         scores = []
         for i, counts in enumerate(self.tokens):
-            score = sum((1 + math.log(counts[t])) * math.log(1 + len(self.tokens) / (1 + sum(t in c for c in self.tokens))) for t in query if counts[t])
-            scores.append((score, -i, self.documents[i]))
-        return [d for _, _, d in sorted(scores, key=lambda x: (x[0], x[1]), reverse=True)[:k]]
+            score = sum((1 + math.log(counts[t])) * self.idf[t] for t in query if counts[t])
+            if score > 0:
+                scores.append((score, -i, self.documents[i]))
+        return [d for _, _, d in sorted(scores, key=lambda x:(x[0],x[1]), reverse=True)[:k]]

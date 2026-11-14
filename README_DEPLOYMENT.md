@@ -19,3 +19,7 @@ Payments services and databases are independent and must not be modified.
 Public URL: https://api.mycodeexperience.com/JosephRochelle/
 Health: https://api.mycodeexperience.com/JosephRochelle/health
 Current Qwen model: qwen2.5:1.5b (CPU). Single active AI request; retry if busy.
+
+## Knowledge and response speed
+Professional facts: resume.txt. Confirmed personal facts: about_me.txt. Common questions: profile_answers.json (source quotes are validated before serving an answer).
+The common question buttons can respond without model inference. Other questions use Qwen; completed streamed responses are cached by exact normalized question, model, and source version. Editing source facts invalidates old cached answers.

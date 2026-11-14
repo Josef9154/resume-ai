@@ -8,3 +8,8 @@ This is Joseph Rochelle's virtual resume, not CODE OS.
 - Commit tested changes and push main to deploy. The server checks GitHub every minute.
 - Check /JosephRochelle/health and a real chat response after deployment; never claim success from push alone.
 - Do not modify payments services or their databases.
+
+- Keep about_me.txt and profile_answers.json in deployment. Personal facts require user confirmation.
+- Common answers must have matching source evidence. Never fabricate Eli’s age, breed, or habits.
+- Preserve section headings with their details in retrieval. Zero-match questions must not retrieve arbitrary chunks.
+- Exact-question caches must be bounded and keyed by source revision and model. Never cache truncated/error outputs.

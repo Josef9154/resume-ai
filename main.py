@@ -20,6 +20,9 @@ load_dotenv()
 # =========================================================
 
 BASE_DIR = Path(__file__).resolve().parent
+from answer_cache import ProfileAnswers
+PROFILE_ANSWERS = ProfileAnswers(BASE_DIR)
+
 STATIC_DIR = BASE_DIR / "static"
 RESUME_DB_DIR = BASE_DIR / "resume_db"
 
@@ -190,7 +193,7 @@ def ollama_chat_url():
     return OLLAMA_URL.split("/api/")[0].rstrip("/") + "/api/chat"
 
 
-def stream_ollama(prompt: str):
+def stream_ollama(prompt: str, cache_key=None):
     """Yield text as it is generated; always release the shared inference slot."""
     def event(value):
         return json.dumps(value, ensure_ascii=False) + "\n"
@@ -204,6 +207,7 @@ def stream_ollama(prompt: str):
         with requests.post(ollama_chat_url(), json=payload, stream=True, timeout=(5, 90)) as response:
             response.raise_for_status()
             completed = False
+            answer_parts = []
             for line in response.iter_lines(chunk_size=64):
                 if not line:
                     continue
@@ -211,9 +215,14 @@ def stream_ollama(prompt: str):
                 if item.get("error"):
                     raise ValueError("Model response error")
                 if item.get("message", {}).get("content"):
+                    answer_parts.append(item["message"]["content"])
                     yield event({"delta": item["message"]["content"]})
                 if item.get("done"):
                     completed = True
+                    if cache_key is not None and item.get("done_reason") != "length":
+                        PROFILE_ANSWERS.put(cache_key, "".join(answer_parts))
+                    if item.get("done_reason") == "length":
+                        yield event({"delta": "\n\nThere’s more to this answer. Please ask a narrower follow-up."})
                     yield event({"done": True})
                     break
             if not completed:
@@ -615,6 +624,14 @@ def chat(query: Query):
             ),
         }
 
+    direct = PROFILE_ANSWERS.direct(question)
+    if direct:
+        return {"question": question, "answer": direct}
+    cache_key = PROFILE_ANSWERS.key(question, OLLAMA_MODEL)
+    cached = PROFILE_ANSWERS.get(cache_key)
+    if cached:
+        return {"question": question, "answer": cached}
+
     try:
         db = get_resume_db()
 
@@ -670,9 +687,7 @@ def chat(query: Query):
         )
 
         context_sections.append(
-            f"Source: {source_name}\n"
-            f"Content Type: {content_type}\n\n"
-            f"{page_content}"
+            page_content
         )
 
     context = "\n\n".join(context_sections)
@@ -695,7 +710,7 @@ def chat(query: Query):
     if not CHAT_SLOT.acquire(blocking=False):
         raise HTTPException(status_code=429, detail="The assistant is answering another question. Please try again shortly.")
     if query.stream and OLLAMA_URL:
-        return StreamingResponse(stream_ollama(prompt), media_type="application/x-ndjson",
+        return StreamingResponse(stream_ollama(prompt, cache_key), media_type="application/x-ndjson",
                                  headers={"Cache-Control": "no-store", "X-Accel-Buffering": "no"})
     try:
         answer = call_ollama(prompt)
