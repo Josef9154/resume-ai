@@ -15,3 +15,7 @@ Service: resume-ai; deployment timer: resume-ai-update.timer.
 Logs: journalctl -u resume-ai; /srv/resume-ai/deployments.log.
 Secrets: /etc/resume-ai.env (server only).
 Payments services and databases are independent and must not be modified.
+
+Public URL: https://api.mycodeexperience.com/JosephRochelle/
+Health: https://api.mycodeexperience.com/JosephRochelle/health
+Current Qwen model: qwen3:1.7b (CPU). Single active AI request; retry if busy.

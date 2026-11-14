@@ -1,0 +1,11 @@
+{
+  "terminal.integrated.cwd": "${workspaceFolder}",
+  "python.terminal.activateEnvironment": false,
+  "docker.images.label": "resume-ai",
+  "docker-compose.files": [
+    "${workspaceFolder}/docker-compose.yml"
+  ],
+  "files.associations": {
+    "Dockerfile*": "dockerfile"
+  }
+}

@@ -12,6 +12,7 @@ mkdir -p "$release"
 git archive "$revision" | tar -x -C "$release"
 /srv/resume-ai/venv/bin/pip install --quiet -r "$release/requirements-server.txt"
 /srv/resume-ai/venv/bin/python -m compileall -q "$release/main.py" "$release/text_retrieval.py"
+(cd "$release" && /srv/resume-ai/venv/bin/python -m unittest test_deployment -q)
 ln -sfn "$release" /srv/resume-ai/current
 systemctl restart resume-ai
 for attempt in $(seq 1 20); do
