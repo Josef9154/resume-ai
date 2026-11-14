@@ -134,3 +134,24 @@ Brings a hybrid capability combining:
 
 Ideal environments:
 Organizations undergoing AI transformation, digital modernization, operational restructuring, or platform-scale growth seeking executive leadership with both strategic and technical depth.
+
+ARTIFICIAL INTELLIGENCE (AI):
+Artificial intelligence is the broad field of building systems that perform tasks such as understanding language, recognizing patterns, and supporting decisions. AI includes machine learning, but not every AI system learns from data.
+
+MACHINE LEARNING (ML):
+Machine learning is a subset of artificial intelligence where models learn patterns from data to make predictions or classifications instead of relying only on explicitly written rules. A practical example is predicting customer churn from historical customer data.
+
+DEEP LEARNING (DL):
+Deep learning is a subset of machine learning that uses neural networks with multiple layers to learn representations of data. It is commonly used for language, images, and speech. More complex is not automatically better; the problem, data, cost, and validation should drive the choice.
+
+FAVORITE PYTHON LIBRARY - PYCARET:
+PyCaret is one of my favorite Python libraries for building quick machine learning models. It is an open-source, low-code library that helps automate machine learning workflows and compare models quickly. Speeding up experimentation does not replace data quality checks or validation. Technical reference: https://pycaret.gitbook.io/docs
+
+STRATEGY AND INVESTMENT PLANNING:
+Strategy has been a major focus of my work, including investment planning across $7.5 billion in capital and expense. This figure describes investment planning scope, not personal spending authority, revenue, savings, or an annual budget. My work connects enterprise strategy, portfolio governance, execution, and financial outcomes.
+
+MY CODE EXPERIENCE AND CODE OS:
+My company, My Code Experience, is a fitness platform and ecosystem. CODE OS, my CODE operating system, connects that ecosystem as a platform and command center. The work involves multiple API integrations, including social single sign-on and connections into CODE OS. Do not claim specific social providers or integrations are live or verified unless separately documented.
+
+APIS AND SOCIAL SINGLE SIGN-ON:
+APIs let systems exchange data or trigger actions through defined interfaces. Social single sign-on lets someone authenticate with an existing identity provider rather than create another separate password. My Code Experience uses API integration work to connect its fitness ecosystem with CODE OS. Authentication establishes identity; authorization separately controls what that person can access. Specific providers and current deployment status are not established by this profile.

@@ -122,5 +122,126 @@
         "quote": "Associate Director of Strategy & Business Transformation – Product & Revenue Organization"
       }
     ]
+  },
+  {
+    "questions": [
+      "What is artificial intelligence",
+      "Explain AI",
+      "Explain artificial intelligence"
+    ],
+    "answer": "I think of AI as the broad field of getting computers to handle tasks like understanding language, recognizing patterns, and supporting decisions. Machine learning is one approach within AI, but not every AI system learns from data.",
+    "evidence": [
+      {
+        "file": "resume.txt",
+        "quote": "Artificial intelligence is the broad field of building systems that perform tasks such as understanding language, recognizing patterns, and supporting decisions. AI includes machine learning, but not every AI system learns from data."
+      }
+    ]
+  },
+  {
+    "questions": [
+      "What is machine learning",
+      "Explain machine learning",
+      "Explain ML"
+    ],
+    "answer": "Machine learning is where a model learns patterns from data instead of us writing every rule. Think of predicting which customers might leave based on past behavior. It's part of AI.",
+    "evidence": [
+      {
+        "file": "resume.txt",
+        "quote": "Machine learning is a subset of artificial intelligence where models learn patterns from data to make predictions or classifications instead of relying only on explicitly written rules. A practical example is predicting customer churn from historical customer data."
+      }
+    ]
+  },
+  {
+    "questions": [
+      "What is deep learning",
+      "Explain deep learning"
+    ],
+    "answer": "Deep learning is a type of machine learning that uses neural networks with multiple layers. It's useful for things like language, images, and speech. I wouldn't pick it just because it's more complex—the problem and the data need to justify it.",
+    "evidence": [
+      {
+        "file": "resume.txt",
+        "quote": "Deep learning is a subset of machine learning that uses neural networks with multiple layers to learn representations of data. It is commonly used for language, images, and speech. More complex is not automatically better; the problem, data, cost, and validation should drive the choice."
+      }
+    ]
+  },
+  {
+    "questions": [
+      "What is the difference between AI machine learning and deep learning",
+      "Explain AI ML and deep learning"
+    ],
+    "answer": "AI is the broad field. Machine learning sits inside AI and learns patterns from data. Deep learning sits inside machine learning and uses neural networks with multiple layers. I start with the problem, then choose the approach that fits.",
+    "evidence": [
+      {
+        "file": "resume.txt",
+        "quote": "Artificial intelligence is the broad field of building systems that perform tasks such as understanding language, recognizing patterns, and supporting decisions. AI includes machine learning, but not every AI system learns from data."
+      },
+      {
+        "file": "resume.txt",
+        "quote": "Machine learning is a subset of artificial intelligence where models learn patterns from data to make predictions or classifications instead of relying only on explicitly written rules. A practical example is predicting customer churn from historical customer data."
+      },
+      {
+        "file": "resume.txt",
+        "quote": "Deep learning is a subset of machine learning that uses neural networks with multiple layers to learn representations of data. It is commonly used for language, images, and speech. More complex is not automatically better; the problem, data, cost, and validation should drive the choice."
+      }
+    ]
+  },
+  {
+    "questions": [
+      "What is your favorite Python library",
+      "What are your favorite Python libraries",
+      "Why do you like PyCaret",
+      "Tell me about PyCaret"
+    ],
+    "answer": "PyCaret is one of my favorites. I use it to build and compare machine learning models quickly, so I can get to a useful starting point faster. I still need to check the data and validate the results before trusting a model.",
+    "evidence": [
+      {
+        "file": "resume.txt",
+        "quote": "PyCaret is one of my favorite Python libraries for building quick machine learning models. It is an open-source, low-code library that helps automate machine learning workflows and compare models quickly. Speeding up experimentation does not replace data quality checks or validation. Technical reference: https://pycaret.gitbook.io/docs"
+      }
+    ]
+  },
+  {
+    "questions": [
+      "Tell me about your strategy experience",
+      "Tell me about investment planning",
+      "What is your investment planning experience",
+      "What is the 7.5 billion"
+    ],
+    "answer": "Strategy has been a big focus of my work, including investment planning across $7.5 billion in capital and expense. I connect the strategy to portfolio decisions, execution, and financial outcomes. That figure is the planning scope, not a claim of savings or personal spending authority.",
+    "evidence": [
+      {
+        "file": "resume.txt",
+        "quote": "Strategy has been a major focus of my work, including investment planning across $7.5 billion in capital and expense. This figure describes investment planning scope, not personal spending authority, revenue, savings, or an annual budget. My work connects enterprise strategy, portfolio governance, execution, and financial outcomes."
+      }
+    ]
+  },
+  {
+    "questions": [
+      "Tell me about My Code Experience",
+      "What is My Code Experience",
+      "Tell me about your company",
+      "What is CODE OS"
+    ],
+    "answer": "My Code Experience is my fitness platform and ecosystem. CODE OS is the operating system and command center that connects it. The work brings together API integrations, social single sign-on, and connections across the fitness experience.",
+    "evidence": [
+      {
+        "file": "resume.txt",
+        "quote": "My company, My Code Experience, is a fitness platform and ecosystem. CODE OS, my CODE operating system, connects that ecosystem as a platform and command center. The work involves multiple API integrations, including social single sign-on and connections into CODE OS. Do not claim specific social providers or integrations are live or verified unless separately documented."
+      }
+    ]
+  },
+  {
+    "questions": [
+      "Tell me about your API experience",
+      "How do APIs and social sign on fit into CODE OS",
+      "Explain social single sign on"
+    ],
+    "answer": "I work with APIs to connect My Code Experience and CODE OS. Social single sign-on lets people use an existing identity to sign in. I keep identity and access separate: signing in tells us who someone is; permissions determine what they can use.",
+    "evidence": [
+      {
+        "file": "resume.txt",
+        "quote": "APIs let systems exchange data or trigger actions through defined interfaces. Social single sign-on lets someone authenticate with an existing identity provider rather than create another separate password. My Code Experience uses API integration work to connect its fitness ecosystem with CODE OS. Authentication establishes identity; authorization separately controls what that person can access. Specific providers and current deployment status are not established by this profile."
+      }
+    ]
   }
 ]

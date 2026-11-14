@@ -75,6 +75,28 @@ class ProfileCoverageTests(unittest.TestCase):
         self.assertIn("Bethel University", docs[0].page_content)
         self.assertLess(sum(len(d.page_content) for d in docs), 1500)
 
+    def test_new_professional_topics_retrieved(self):
+        for question, expected in (
+            ("Explain artificial intelligence", "ARTIFICIAL INTELLIGENCE"),
+            ("Explain machine learning", "MACHINE LEARNING"),
+            ("Explain deep learning", "DEEP LEARNING"),
+            ("Why PyCaret for quick models?", "PyCaret"),
+            ("investment planning capital expense", "$7.5 billion"),
+            ("My Code Experience fitness ecosystem", "My Code Experience"),
+            ("social single sign-on APIs", "single sign-on"),
+        ):
+            with self.subTest(question=question):
+                docs = TextResumeIndex(ROOT).similarity_search(question, 3)
+                self.assertTrue(any(expected in d.page_content for d in docs))
+
+    def test_new_quick_answers_and_unverified_provider(self):
+        from answer_cache import ProfileAnswers
+        answers = ProfileAnswers(ROOT)
+        self.assertIn("PyCaret", answers.direct("What are your favorite Python libraries?"))
+        self.assertIn("$7.5 billion", answers.direct("Tell me about investment planning"))
+        self.assertIn("fitness", answers.direct("Tell me about your company"))
+        self.assertIsNone(answers.direct("Is Facebook sign-in live?"))
+
     def test_eli_is_retrieved(self):
         docs = TextResumeIndex(ROOT).similarity_search("Tell me about Eli", 3)
         self.assertTrue(any("Eli is my dog" in d.page_content for d in docs))
