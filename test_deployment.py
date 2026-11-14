@@ -70,6 +70,11 @@ class StreamingTests(unittest.TestCase):
         main.CHAT_SLOT.release()
 
 class ProfileCoverageTests(unittest.TestCase):
+    def test_specific_degree_avoids_unrelated_career_sections(self):
+        docs = TextResumeIndex(ROOT).similarity_search("Which university awarded your Executive MBA?", 3)
+        self.assertIn("Bethel University", docs[0].page_content)
+        self.assertLess(sum(len(d.page_content) for d in docs), 1500)
+
     def test_eli_is_retrieved(self):
         docs = TextResumeIndex(ROOT).similarity_search("Tell me about Eli", 3)
         self.assertTrue(any("Eli is my dog" in d.page_content for d in docs))

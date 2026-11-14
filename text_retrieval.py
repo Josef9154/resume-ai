@@ -20,11 +20,12 @@ class TextResumeIndex:
                 block = block.strip()
                 if not block:
                     continue
-                if block.isupper() and len(block) < 100:
+                first, _, rest = block.partition("\n")
+                if first.isupper() and len(first) < 100:
                     flush()
-                    heading, parts = block, []
+                    heading, parts = first, ([rest.strip()] if rest.strip() else [])
                 else:
-                    if sum(map(len, parts)) + len(block) > 2200:
+                    if (heading in {"EXPERIENCE:", "PROJECTS:"} and parts) or sum(map(len, parts)) + len(block) > 1800:
                         flush()
                         parts = []
                     parts.append(block)
@@ -45,4 +46,15 @@ class TextResumeIndex:
             score = sum((1 + math.log(counts[t])) * self.idf[t] for t in query if counts[t])
             if score > 0:
                 scores.append((score, -i, self.documents[i]))
-        return [d for _, _, d in sorted(scores, key=lambda x:(x[0],x[1]), reverse=True)[:k]]
+        ranked = sorted(scores, key=lambda x:(x[0],x[1]), reverse=True)
+        selected, characters = [], 0
+        for score, _, document in ranked:
+            if score < ranked[0][0] * 0.65:
+                break
+            if selected and characters + len(document.page_content) > 2400:
+                continue
+            selected.append(document)
+            characters += len(document.page_content)
+            if len(selected) >= k:
+                break
+        return selected
