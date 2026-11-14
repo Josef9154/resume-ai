@@ -1,0 +1,8 @@
+[Unit]
+Description=Check resume repository for updates
+[Timer]
+OnBootSec=2min
+OnUnitActiveSec=1min
+Unit=resume-ai-update.service
+[Install]
+WantedBy=timers.target

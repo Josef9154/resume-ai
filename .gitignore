@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+.venv/
+env/
+venv/
+*.pyc
+
+# Environment files
+.env
+.env.*
+.ngrok_token
+
+# Resume DB artifacts
+resume_db/index.faiss
+resume_db/index.pkl
+
+# OS files
+.DS_Store
+Thumbs.db
+
+static/index.before-redesign-*
+Peptide_Videos_VSCode_Project/
+*.zip

@@ -1,0 +1,136 @@
+NAME: Joseph Rochelle, PhD
+
+CURRENT TITLE:
+Associate Director of Strategy & Business Transformation – Product & Revenue Organization
+
+FUNCTIONAL SCOPE:
+Strategy | Portfolio Project Management | AI/ML | Orchestration | Governance | Enterprise Transformation
+
+SUMMARY:
+AI and Digital Transformation Executive with 20+ years of experience leading enterprise-scale strategy, AI systems development, and multi-billion-dollar portfolio governance. Proven track record delivering $1.2B+ in digital revenue impact, $300M+ average cost optimization, and $5M–$300M OPEX reduction initiatives.
+
+Expert in building AI systems, deploying LLM-powered applications, and leading organizational transformation across 300+ products and services. Combines executive leadership with hands-on engineering in Python, FastAPI, and modern AI architectures (RAG, vector databases, LLM orchestration).
+
+HONEST POSITIONING:
+Hybrid executive builder operating at the intersection of enterprise strategy, AI/ML systems, and large-scale transformation. Strongest in translating ambiguity into structured execution systems, driving measurable financial outcomes, and scaling organizations through AI, automation, and governance frameworks.
+
+SKILLS:
+AI Strategy, Digital Transformation, Enterprise Portfolio Governance
+Revenue Growth, Cost Optimization, OPEX Optimization
+Organizational Design, Workforce Transformation, Change Management
+Process Automation, Lean Six Sigma (VLSS), Business Optimization
+Executive Leadership, Stakeholder Management, Board-Level Communication
+
+TECH STACK:
+Python, FastAPI, REST APIs, SQL, JavaScript, HTML, CSS, Git, Cloud Platforms
+LLMs: OpenAI, Claude, Grok, Google AI (Vertex AI / Antigravity), Ollama
+AI Systems: RAG pipelines, FAISS vector databases, prompt engineering, agent workflows
+Architecture: API design, scalable backend systems, AI integration systems
+
+EXPERIENCE:
+
+Associate Director – Strategy & Business Transformation (Product & Revenue Organization)
+- Lead enterprise strategy, portfolio governance, AI/ML integration, and orchestration across product and revenue systems
+- Deliver ~$1.2B in digital revenue impact across web and mobile ecosystems
+- Generate ~$50M in incremental revenue through product expansion and optimization
+- Manage portfolio of ~300 products and services across enterprise scale
+- Lead governance frameworks connecting strategy, execution, and financial outcomes
+- Deploy AI/LLM-powered systems for automation and decision support (OpenAI, Claude, Grok, Google AI, Ollama)
+
+Head of Cost Optimization & Financial Transformation
+- Delivered average ~$300M in annual cost savings
+- Executed OPEX reduction initiatives ranging from $5M to $300M per program
+- Led enterprise automation initiatives saving 20–40 hours per week per workflow
+- Built governance models linking financial outcomes to operational execution
+
+Director of Human Capital Transformation
+- Designed workforce transformation programs with zero attrition
+- Achieved ~90% promotion rate through structured development frameworks
+- Built VLSS (Very Lean Six Sigma) programs tied to productivity measurement
+- Translated time savings into measurable performance systems
+
+Organizational Design & Enterprise Enablement Lead
+- Designed org structures with spans of control ranging from 6:1 to 30:1
+- Owned enterprise-wide org redesign and operating model transformation
+- Built team and individual charters aligned to performance outcomes
+- Established scalable governance and execution frameworks across business units
+
+Process Excellence & Continuous Improvement Leader
+- Certified and developed 5 Six Sigma Black Belts
+- Led enterprise process optimization and automation programs
+- Standardized operational workflows across large-scale organizations
+
+PROJECTS:
+
+Enterprise AI Assistant Platform
+- Built and deployed a public-facing AI assistant using RAG architecture
+- Implemented FAISS vector database for semantic search and retrieval
+- Integrated multi-LLM routing (OpenAI, Claude, Grok, Google AI)
+- Designed scalable API-based architecture using Python and FastAPI
+
+AI Resume Assistant System
+- Developed retrieval-augmented resume intelligence system
+- Converts structured resume data into searchable vector embeddings
+- Enables contextual AI Q&A over professional experience
+
+Portfolio Website
+- Built and deployed cloud-based personal portfolio platform
+- Showcases AI systems, leadership experience, and technical projects
+
+EDUCATION (ALL DEGREES):
+
+PhD – Business & Technology
+Capella University
+Specialization: Project Management / Portfolio Management
+
+MS – Data Science
+Specialization: Artificial Intelligence & Machine Learning
+
+MS – Organizational Leadership
+Specialization: Strategic Innovation & Change Management
+
+Executive MBA
+Bethel University
+
+BS – Business Management & Organizational Development
+Bethel University
+
+CERTIFICATIONS:
+
+Google Generative AI Certification
+Google Vertex AI / Machine Learning Engineering Certification
+Google Cloud AI & Data Engineering Certification
+
+Six Sigma Black Belt (Certified)
+Agile / Scrum Master Certification
+Design Thinking Certification
+
+SEEKING OPPORTUNITIES:
+
+Executive leadership roles at the intersection of AI, strategy, and enterprise transformation, including:
+
+Chief Executive Officer (CEO)
+Chief Strategy Officer (CSO)
+Chief AI Officer (CAIO)
+Chief Digital Officer (CDO)
+Head of AI Transformation / Enterprise AI
+
+Focus Areas:
+- Enterprise Strategy & Portfolio Transformation
+- AI/ML Platform Leadership and Scaling
+- Revenue Growth & Digital Ecosystem Expansion
+- Cost Optimization & Operational Efficiency at scale
+- Organizational Design and Large-Scale Workforce Transformation
+- AI-driven Product and Platform Development
+- Governance, Orchestration, and Executive Decision Systems
+
+Executive Value Proposition:
+Proven ability to operate at enterprise scale, delivering measurable financial impact including $1.2B+ in digital revenue influence, ~$300M average cost optimization, and $5M–$300M OPEX reduction programs. Experienced in leading ~300 product/service portfolios and aligning strategy to execution across global organizations.
+
+Brings a hybrid capability combining:
+- C-suite strategic leadership
+- Deep technical AI/ML execution (LLMs, RAG systems, automation)
+- Enterprise governance and transformation architecture
+
+Ideal environments:
+Organizations undergoing AI transformation, digital modernization, operational restructuring, or platform-scale growth seeking executive leadership with both strategic and technical depth.

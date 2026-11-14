@@ -1,0 +1,1 @@
+{"version":"2.0.0","tasks":[{"label":"Resume: push to OVH","type":"shell","command":"git push origin main","options":{"cwd":"${workspaceFolder}"},"problemMatcher":[]}]}

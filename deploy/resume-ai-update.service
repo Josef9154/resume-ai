@@ -1,0 +1,8 @@
+[Unit]
+Description=Deploy approved resume main branch
+After=network-online.target
+[Service]
+Type=oneshot
+ExecStart=/usr/local/sbin/resume-ai-update
+Nice=15
+CPUQuota=30%
