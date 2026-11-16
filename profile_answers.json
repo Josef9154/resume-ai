@@ -76,23 +76,23 @@
       "What is your leadership style",
       "How do you lead"
     ],
-    "answer": "I’m hands-on. I want a clear plan, people who know what they own, and follow-through that turns the plan into results. Helping people develop is part of that too.",
+  "answer": "Hope is not a plan. A plan is the charter: it defines the mission, vision, and north star, then creates a clear destination postcard for what done looks like and the measurements required to achieve it. My leadership style is to organize the team around the opportunities with the strongest path to success, then drive outcomes through a 0-to-100% deliverable-based operating rhythm. I keep cost, time, and resource management visible throughout the lifecycle, using each phase as a deliberate pass/fail moment. Failure is not wasted. It becomes organizational wisdom - evidence the team can use to learn, mature the process, and improve the next cycle. The goal is not only to finish one initiative, but to lap our own results year over year.",
     "evidence": [
       {
         "file": "resume.txt",
-        "quote": "C-suite strategic leadership"
+      "quote": "LEADERSHIP PHILOSOPHY:"
       },
       {
         "file": "resume.txt",
-        "quote": "Deep technical AI/ML execution"
+      "quote": "Hope is not a plan. A plan is the charter: it defines the mission, vision, and north star"
       },
       {
         "file": "resume.txt",
-        "quote": "structured development frameworks"
+      "quote": "0-to-100% deliverable-based operating rhythm"
       },
       {
         "file": "resume.txt",
-        "quote": "measurable performance systems"
+      "quote": "Failure is not wasted. It becomes organizational wisdom"
       }
     ]
   },
