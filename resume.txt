@@ -14,6 +14,16 @@ Expert in building AI systems, deploying LLM-powered applications, and leading o
 HONEST POSITIONING:
 Hybrid executive builder operating at the intersection of enterprise strategy, AI/ML systems, and large-scale transformation. Strongest in translating ambiguity into structured execution systems, driving measurable financial outcomes, and scaling organizations through AI, automation, and governance frameworks.
 
+APPLIED AI LEADERSHIP PROFILE:
+Executive technology leader who connects AI strategy to usable, production-oriented systems and measurable adoption. Relevant strengths for Director of Applied AI and similar roles include:
+- Setting AI roadmaps, investment priorities, governance models, and practical measures of business value.
+- Serving as an internal AI Center of Excellence across product, revenue, finance, legal, sourcing, and technology stakeholders.
+- Personally building and deploying AI applications, retrieval systems, agent workflows, APIs, and user-facing tools with Python, FastAPI, and modern LLM platforms.
+- Translating user and business needs into prioritized product plans, specifications, prototypes, and operating processes.
+- Establishing responsible AI practices spanning access controls, vendor due diligence, compliance, budget guardrails, model/tool evaluation, and operational resilience.
+- Leading build-versus-buy and supplier decisions while measuring adoption, productivity, cost, and financial outcomes.
+- Advising executives and working credibly with engineers, analysts, finance, risk, legal, and operations teams to move ambiguous initiatives into execution.
+
 SKILLS:
 AI Strategy, Digital Transformation, Enterprise Portfolio Governance
 Revenue Growth, Cost Optimization, OPEX Optimization
@@ -173,6 +183,7 @@ SEEKING OPPORTUNITIES:
 
 Executive leadership roles at the intersection of AI, strategy, and enterprise transformation, including:
 
+Director of Applied AI
 Chief Executive Officer (CEO)
 Chief Strategy Officer (CSO)
 Chief AI Officer (CAIO)
