@@ -20,13 +20,13 @@ My leadership style is to organize the team around the opportunities with the st
 Failure is not wasted. It becomes organizational wisdom - evidence the team can use to learn, mature the process, and improve the next cycle. The goal is not only to finish one initiative, but to lap our own results year over year.
 
 APPLIED AI LEADERSHIP PROFILE:
-Executive technology leader who connects AI strategy to usable, production-oriented systems and measurable adoption. Relevant strengths for Director of Applied AI and similar roles include:
+Executive technology leader who connects AI strategy to usable, production-oriented systems and measurable adoption. Key strengths for Director of Applied AI and related roles include:
 - Setting AI roadmaps, investment priorities, governance models, and practical measures of business value.
 - Serving as an internal AI Center of Excellence across product, revenue, finance, legal, sourcing, and technology stakeholders.
-- Personally building and deploying AI applications, retrieval systems, agent workflows, APIs, and user-facing tools with Python, FastAPI, and modern LLM platforms.
+- Building and deploying AI applications, retrieval systems, agent workflows, APIs, and user-facing tools with Python, FastAPI, and modern LLM platforms.
 - Translating user and business needs into prioritized product plans, specifications, prototypes, and operating processes.
 - Establishing responsible AI practices spanning access controls, vendor due diligence, compliance, budget guardrails, model/tool evaluation, and operational resilience.
-- Leading build-versus-buy and supplier decisions while measuring adoption, productivity, cost, and financial outcomes.
+- Leading build-versus-buy and supplier decisions while measuring adoption, productivity, cost, and financial impact.
 - Advising executives and working credibly with engineers, analysts, finance, risk, legal, and operations teams to move ambiguous initiatives into execution.
 
 ENTREPRENEURIAL LEADERSHIP & CODE ECOSYSTEM:
@@ -34,14 +34,14 @@ Entrepreneur and Co-Founder of My Code Experience & Research, building a connect
 - Built CODE OS as a webOS and appOS platform and command center connecting the broader CODE ecosystem, member experiences, commerce, training, and operational workflows.
 - Developed advanced apparel and clothing experiences under CODE Style, including product strategy, catalog operations, sizing, creative direction, and commerce pathways.
 - Built and operated connected offerings across supplements, research peptides, online coaching and training, hair and skin products, and drop shipping.
-- Directed numerous API management items across identity, commerce, catalog, product, payment, social, CRM, fulfillment, and platform integrations.
+- Directed API management across identity, commerce, catalog, product, payment, social, CRM, fulfillment, and platform integrations.
 - Connected product, service, and research experiences through shared governance, data, orchestration, and customer journeys across the Experience site, Research site, webOS, and appOS.
 
 PUBLIC CODE DESTINATIONS:
 Experience site: https://mycodeexperience.com/
 Research site: https://mycodeexperiencepeptides.com/
 CODE staging site: https://staging.mycodeexperience.com/
-CODE OS staging preview: https://staging.mycodeexperience.com/en/code-os/preview/
+CODE OS staging sample: https://staging.mycodeexperience.com/en/code-os/sample/
 
 SKILLS:
 AI Strategy, Machine Learning, Deep Learning, Digital Transformation, Enterprise Portfolio Governance
@@ -70,9 +70,9 @@ SELECTED 2026 YEAR-END ACCOMPLISHMENTS:
 
 Contract Lifecycle & Sourcing Excellence
 - Led a global team across multiple time zones to manage 300+ contract renewals and submissions, including 173 change requests, across standalone SOWs and Fieldglass workers.
-- Ran Inherent Risk Questionnaires (IRQ), Global Risk Assessments, and supplier enablements so engagements met third-party risk and compliance requirements.
+- Managed Inherent Risk Questionnaires (IRQ), Global Risk Assessments, and supplier enablements to ensure engagements met third-party risk and compliance requirements.
 - Directed competitive sourcing through RFPs, RFQs, and RFIs, including the 2027 Digital Experience Professional Services Rate Card RFQ, strengthening Verizon's position on pricing and scope.
-- Managed Engrams for AI&D modeling, connecting contract and investment data to AI&D planning.
+- Managed Engrams for AI&D modeling, connecting contract and investment data to planning.
 
 Financial Operations & Data Fidelity
 - Transitioned investment reporting services to FP&A, giving Finance a single owner and freeing the team for strategic work.
@@ -80,7 +80,7 @@ Financial Operations & Data Fidelity
 - Brought digital sales, partnerships, and incentives under sourcing guardrails, including Project Bruno and commission changes for Red Ventures, with consistent governance and modeling across the investment portfolio.
 
 AI Strategy, Orchestration & Governance
-- Took organizational ownership of AI strategy, orchestration, and governance.
+- Assumed organizational ownership of AI strategy, orchestration, and governance.
 - Managed the Copilot exit, secured communications approval, and led the transition ahead of the enterprise Copilot exit on August 1.
 - Enabled and governed the next generation of AI tools, including Claude Code and the TPD-to-GCP migration, Devin.AI, Gemini, and Antigravity.
 - Built an AI-tools capability and traceability matrix as the source of truth for product and use-case fit; identified 15 separate competitive-intelligence web-scraping tools and prevented duplicate investment.
@@ -89,7 +89,7 @@ AI Strategy, Orchestration & Governance
 PR Innovation & Incubation Labs
 - Created the PR Innovation & Incubation Labs and secured full approval, establishing a repeatable path for evaluating emerging AI capabilities and moving them toward production.
 - Stood up the BU Wallet Sandbox, with non-production and production GCP/AWS accounts in progress.
-- Brought in strategic partners, including Anthropic, to accelerate lab use cases.
+- Engaged strategic partners, including Anthropic, to accelerate lab use cases.
 
 PR Innovation PODs
 - Launched six VP-level Innovation PODs aligned to individual VP portfolios, driving roadmap development, organizational learning, AI maturity, and budget decisions.
@@ -107,7 +107,7 @@ Kairos Migration: Enterprise Pioneers
 
 Research & Data-Driven Decision Making
 - Directed descriptive and inferential statistical analysis of AI usage, merging TPD and GCP usage data to establish a baseline, exception flow, and budget-increase process for 2027 VP-level AI budgets.
-- Handed the baseline, exception process, and budget controls to Kairos so they could run on the enterprise platform.
+- Transitioned the baseline, exception process, and budget controls to Kairos for operation on the enterprise platform.
 - Projected AI costs from real usage, analyzing Claude adoption data from 166 enabled users in a single week and annualizing it to set guardrails before spending grew.
 - Turned migration telemetry and troubleshooting findings into recommendations adopted by Kairos leadership for the broader rollout.
 
@@ -120,7 +120,7 @@ Compliance, Escalations & Governance Through Organizational Learning
 - Secured leadership approval for a governed GCP sandbox with a $100K budget and required executive pre-approval for revenue-related experiments.
 - Implemented AI budget caps, job-role personas, and business-case thresholds after identifying uncapped daily spend of $2K–$10K per person.
 - Built team-owned escalation paths and resolved cross-functional issues with A/R, Legal, and other partners; examples included the Clearlink OOA reporting dispute and Equifax Death Master File contract-term issues.
-- Taught the process through stakeholder guidance, Kairos migration support messages, change-champion recommendations, and reusable how-to videos.
+- Scaled the process through stakeholder guidance, Kairos migration support messages, change-champion recommendations, and reusable how-to videos.
 
 Cross-Functional Enablement & License Management
 - Supported the CXO Product Model and related CapEx/OpEx changes, giving partner teams the governance, financial structure, and modeling needed for the transition.
