@@ -101,11 +101,15 @@
       "What do you enjoy outside of work",
       "Tell me about your personal interests"
     ],
-    "answer": "I have a dog named Eli. If you’d like to know something more specific about life outside work, just ask.",
+  "answer": "I live fitness, so I find myself doing some form of movement all the time. I also love hanging out with my dog, Eli, a schnauzer who loves to talk. We go to Starbucks for pup cups, and I dress him up for events.",
     "evidence": [
       {
         "file": "about_me.txt",
-        "quote": "Eli is my dog."
+      "quote": "Eli is my dog, a schnauzer who loves to talk."
+    },
+    {
+      "file": "about_me.txt",
+      "quote": "Fitness is a constant in my life. I find myself doing some form of movement all the time."
       }
     ]
   },
