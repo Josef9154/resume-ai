@@ -21,15 +21,20 @@
       "Who are you",
       "Give me a quick overview"
     ],
-    "answer": "I’m Joseph. I work across strategy, business transformation, and AI, and I’ve been doing this for more than 20 years. I’m hands-on too—I build the systems, not just the plans.",
+  "answer": "My name is Joseph. I work at the intersection of strategy, business transformation, AI, and entrepreneurship. I am passionate about making sure academia and industry standards are shaped by the people driving innovation and transformation in their respective areas. There is always something new to learn, and I genuinely enjoy continued learning and study. I also created My Code Experience, a health and fitness platform and ecosystem built around the consistent, disciplined lifestyle I work to live. You will often find me strength training, practicing yoga, or doing gymnastics. I am hands-on too - I build systems, not just plans.",
     "evidence": [
       {
         "file": "resume.txt",
-        "quote": "20+ years of experience"
+      "file": "about_me.txt",
+      "quote": "My name is Joseph. I am passionate about making sure academia and industry standards are shaped by the people driving innovation and transformation"
       },
       {
-        "file": "resume.txt",
-        "quote": "hands-on engineering"
+      "file": "about_me.txt",
+      "quote": "I created My Code Experience, a platform and ecosystem centered on health and fitness"
+    },
+    {
+      "file": "about_me.txt",
+      "quote": "You will often find me strength training, practicing yoga, or doing gymnastics."
       }
     ]
   },
