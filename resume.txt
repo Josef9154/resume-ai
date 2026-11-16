@@ -37,6 +37,70 @@ Associate Director – Strategy & Business Transformation (Product & Revenue Org
 - Lead governance frameworks connecting strategy, execution, and financial outcomes
 - Deploy AI/LLM-powered systems for automation and decision support (OpenAI, Claude, Grok, Google AI, Ollama)
 
+SELECTED 2026 YEAR-END ACCOMPLISHMENTS:
+
+Contract Lifecycle & Sourcing Excellence
+- Led a global team across multiple time zones to manage 300+ contract renewals and submissions, including 173 change requests, across standalone SOWs and Fieldglass workers.
+- Ran Inherent Risk Questionnaires (IRQ), Global Risk Assessments, and supplier enablements so engagements met third-party risk and compliance requirements.
+- Directed competitive sourcing through RFPs, RFQs, and RFIs, including the 2027 Digital Experience Professional Services Rate Card RFQ, strengthening Verizon's position on pricing and scope.
+- Managed Engrams for AI&D modeling, connecting contract and investment data to AI&D planning.
+
+Financial Operations & Data Fidelity
+- Transitioned investment reporting services to FP&A, giving Finance a single owner and freeing the team for strategic work.
+- Took ownership of A/P and A/R approval trackers; established consistent data-management standards and closed process gaps so approvals, invoices, and forecasts remained reliable.
+- Brought digital sales, partnerships, and incentives under sourcing guardrails, including Project Bruno and commission changes for Red Ventures, with consistent governance and modeling across the investment portfolio.
+
+AI Strategy, Orchestration & Governance
+- Took organizational ownership of AI strategy, orchestration, and governance.
+- Managed the Copilot exit, secured communications approval, and led the transition ahead of the enterprise Copilot exit on August 1.
+- Enabled and governed the next generation of AI tools, including Claude Code and the TPD-to-GCP migration, Devin.AI, Gemini, and Antigravity.
+- Built an AI-tools capability and traceability matrix as the source of truth for product and use-case fit; identified 15 separate competitive-intelligence web-scraping tools and prevented duplicate investment.
+- Protected Verizon in supplier engagements by requiring NDAs and MSAs before AI vendor conversations and stopping unsanctioned supplier-led proof-of-concept sessions.
+
+PR Innovation & Incubation Labs
+- Created the PR Innovation & Incubation Labs and secured full approval, establishing a repeatable path for evaluating emerging AI capabilities and moving them toward production.
+- Stood up the BU Wallet Sandbox, with non-production and production GCP/AWS accounts in progress.
+- Brought in strategic partners, including Anthropic, to accelerate lab use cases.
+
+PR Innovation PODs
+- Launched six VP-level Innovation PODs aligned to individual VP portfolios, driving roadmap development, organizational learning, AI maturity, and budget decisions.
+- Built cost/benefit analysis into AI investment decisions so each POD was measured against business outcomes before scaling.
+- Incubated AI agents through VLSS process flows, creating a governed and repeatable path from idea to production.
+- Extended the Innovation & Incubation Labs governance, evaluation, and funding model into each VP organization so innovation stayed tied to roadmap priorities and budgets.
+
+Kairos Migration: Enterprise Pioneers
+- Moved the organization from fully managed AI access to Kairos, enabling self-service with governed budget exceptions.
+- Pioneered the enterprise migration of 923 employees 45 days before the enterprise launch.
+- Documented environment-variable updates, 400/401 error resolution, and IDE enablement so other business units could succeed.
+- Identified and resolved a cache/memory issue in the TPD-to-Kairos migration, improving the overall rollout plan.
+- Established financial controls before users went live, creating job-role budget personas and approval thresholds after early onboarding showed isolated spend of $2K–$10K per person per day without upfront limits.
+- Shared the rollout playbook with enterprise AI leadership, including change champions, admin reporting requirements, an agent registry, and observability recommendations.
+
+Research & Data-Driven Decision Making
+- Directed descriptive and inferential statistical analysis of AI usage, merging TPD and GCP usage data to establish a baseline, exception flow, and budget-increase process for 2027 VP-level AI budgets.
+- Handed the baseline, exception process, and budget controls to Kairos so they could run on the enterprise platform.
+- Projected AI costs from real usage, analyzing Claude adoption data from 166 enabled users in a single week and annualizing it to set guardrails before spending grew.
+- Turned migration telemetry and troubleshooting findings into recommendations adopted by Kairos leadership for the broader rollout.
+
+Compliance, Escalations & Governance Through Organizational Learning
+- Enforced compliance policy consistently and turned escalations into reusable organizational guidance.
+- Required mutual NDAs and appropriate sourcing requests before supplier POCs, including an mNDA with Incode Technologies before its POC request was opened.
+- Fixed VAST non-compliant applications by requiring valid Verizon Application IDs before new GCP projects and AI software received write or compute access.
+- Routed investments through formal accounting guidance review so products were classified correctly as CapEx or OpEx.
+- Handled an M&A-related investigation through mitigation actions that protected Verizon's financial and legal position.
+- Secured leadership approval for a governed GCP sandbox with a $100K budget and required executive pre-approval for revenue-related experiments.
+- Implemented AI budget caps, job-role personas, and business-case thresholds after identifying uncapped daily spend of $2K–$10K per person.
+- Built team-owned escalation paths and resolved cross-functional issues with A/R, Legal, and other partners; examples included the Clearlink OOA reporting dispute and Equifax Death Master File contract-term issues.
+- Taught the process through stakeholder guidance, Kairos migration support messages, change-champion recommendations, and reusable how-to videos.
+
+Cross-Functional Enablement & License Management
+- Supported the CXO Product Model and related CapEx/OpEx changes, giving partner teams the governance, financial structure, and modeling needed for the transition.
+- Took over license management for PR, owning allocation, optimization, and cost control across the organization's software and AI licenses.
+- Led the Asana proof of concept by enabling Asana MCPs in Claude, designing license stacks, and setting up team engineering for a 100-seat validation before scaling.
+
+Global People Leadership
+- Led a globally distributed team through a year of major scope growth, building capability in AI, data science, and automation while moving the team from operational support to strategic, AI-enabled work.
+
 Head of Cost Optimization & Financial Transformation
 - Delivered average ~$300M in annual cost savings
 - Executed OPEX reduction initiatives ranging from $5M to $300M per program
