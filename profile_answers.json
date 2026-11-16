@@ -11,7 +11,7 @@
     "evidence": [
       {
         "file": "about_me.txt",
-        "quote": "Eli is my dog."
+        "quote": "Eli is my dog, a schnauzer who loves to talk."
       }
     ]
   },
@@ -55,7 +55,7 @@
       },
       {
         "file": "resume.txt",
-        "quote": "~300 products and services"
+        "quote": "approximately 300 products and services"
       }
     ]
   },
@@ -128,7 +128,7 @@
     "evidence": [
       {
         "file": "resume.txt",
-        "quote": "Associate Director of Strategy & Business Transformation – Product & Revenue Organization"
+        "quote": "Associate Director of Strategy & Business Transformation"
       }
     ]
   },
