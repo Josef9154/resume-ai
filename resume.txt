@@ -25,10 +25,10 @@ Executive technology leader who connects AI strategy to usable, production-orien
 - Advising executives and working credibly with engineers, analysts, finance, risk, legal, and operations teams to move ambiguous initiatives into execution.
 
 SKILLS:
-AI Strategy, Digital Transformation, Enterprise Portfolio Governance
+AI Strategy, Machine Learning, Deep Learning, Digital Transformation, Enterprise Portfolio Governance
 Revenue Growth, Cost Optimization, OPEX Optimization
 Organizational Design, Workforce Transformation, Change Management
-Process Automation, Lean Six Sigma (VLSS), Business Optimization
+Process Automation, Lean Six Sigma (VLSS), Business Optimization, Advanced Agile, Advanced Product
 Executive Leadership, Stakeholder Management, Board-Level Communication
 
 TECH STACK:
@@ -172,11 +172,18 @@ Bethel University
 CERTIFICATIONS:
 
 Google Generative AI Certification
+Google Applied AI Certifications
 Google Vertex AI / Machine Learning Engineering Certification
 Google Cloud AI & Data Engineering Certification
 
+Master Black Belt VLSS
+Black Belt VLSS
+Green Belt VLSS
+Yellow Belt VLSS
 Six Sigma Black Belt (Certified)
-Agile / Scrum Master Certification
+Advanced Agile Certification
+Advanced Product Certification
+Scrum Master Certification
 Design Thinking Certification
 
 SEEKING OPPORTUNITIES:
