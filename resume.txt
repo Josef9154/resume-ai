@@ -61,13 +61,26 @@ EXPERIENCE:
 VERIZON | March 2005–Present
 Selected leadership scope across strategy, business transformation, cost optimization, financial transformation, human capital transformation, organizational design, process excellence, AI strategy, orchestration, governance, and global people leadership.
 
-Associate Director – Strategy & Business Transformation (Product & Revenue Organization)
-- Lead enterprise strategy, portfolio governance, AI/ML integration, and orchestration across product and revenue systems
-- Deliver ~$1.2B in digital revenue impact across web and mobile ecosystems
-- Generate ~$50M in incremental revenue through product expansion and optimization
-- Manage portfolio of ~300 products and services across enterprise scale
-- Lead governance frameworks connecting strategy, execution, and financial outcomes
-- Deploy AI/LLM-powered systems for automation and decision support (OpenAI, Claude, Grok, Google AI, Ollama)
+Associate Director – Global Strategic Investment Planning & Governance | August 2022–Present
+- Lead Verizon CXO investment planning, governance, and orchestration across enterprise portfolios.
+- Lead steering and governance councils, standardize business-case constructs, and translate CapEx and OpEx requests into executive and board-level recommendations.
+- Lead a global hybrid portfolio team and coordinate strategic planning across product, revenue, finance, technology, HR, and operations stakeholders.
+- Lead enterprise strategy, portfolio governance, AI/ML integration, and orchestration across product and revenue systems.
+- Deliver ~$1.2B in digital revenue impact across web and mobile ecosystems and generate approximately $50M in incremental revenue through product expansion and optimization.
+- Manage a portfolio of approximately 300 products and services while connecting governance, execution, and financial outcomes.
+
+Associate Director – Business Strategy & Governance | March 2019–March 2022
+- Led project portfolio governance, strategic planning, execution roadmaps, capital planning, pilot governance, quality-management systems, and technology transformation.
+- Provided strategic governance for 18 directors supporting approximately 22,000 employees.
+- Guided business-case alignment, opportunity-cost analysis, executive presentations, and operating-model transformation.
+
+Data Scientist – Voice, Chat & Social Analytics | October 2015–March 2019
+- Developed and maintained national contact-driver classification and digital analytics models across voice, chat, and social channels.
+- Built executive reporting and analytics using Aster Teradata, EDW, Hadoop, MySQL, vGrid, Python, R, Clarabridge, and Verint.
+
+Front-Line Leadership | March 2005–October 2015
+- Held progressive leadership roles across customer service, technical support, operations, portfolio management, and data science.
+- Led more than 300 employees and people leaders across multiple spans of control.
 
 SELECTED 2026 YEAR-END ACCOMPLISHMENTS:
 
@@ -160,23 +173,6 @@ WALMART | 2003–2006
 Accounting Manager | Customer Service Manager
 - Held progressive management roles spanning accounting operations and customer service leadership.
 
-PROJECTS:
-
-Enterprise AI Assistant Platform
-- Built and deployed a public-facing AI assistant using RAG architecture
-- Implemented FAISS vector database for semantic search and retrieval
-- Integrated multi-LLM routing (OpenAI, Claude, Grok, Google AI)
-- Designed scalable API-based architecture using Python and FastAPI
-
-AI Resume Assistant System
-- Developed retrieval-augmented resume intelligence system
-- Converts structured resume data into searchable vector embeddings
-- Enables contextual AI Q&A over professional experience
-
-Portfolio Website
-- Built and deployed cloud-based personal portfolio platform
-- Showcases AI systems, leadership experience, and technical projects
-
 EDUCATION (ALL DEGREES):
 
 PhD – Business & Technology
@@ -194,6 +190,23 @@ Bethel University
 
 BS – Business Management & Organizational Development
 Bethel University
+
+PROJECTS:
+
+Enterprise AI Assistant Platform
+- Built and deployed a public-facing AI assistant using RAG architecture
+- Implemented FAISS vector database for semantic search and retrieval
+- Integrated multi-LLM routing (OpenAI, Claude, Grok, Google AI)
+- Designed scalable API-based architecture using Python and FastAPI
+
+AI Resume Assistant System
+- Developed retrieval-augmented resume intelligence system
+- Converts structured resume data into searchable vector embeddings
+- Enables contextual AI Q&A over professional experience
+
+Portfolio Website
+- Built and deployed cloud-based personal portfolio platform
+- Showcases AI systems, leadership experience, and technical projects
 
 CERTIFICATIONS:
 
