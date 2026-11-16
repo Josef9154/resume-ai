@@ -24,6 +24,20 @@ Executive technology leader who connects AI strategy to usable, production-orien
 - Leading build-versus-buy and supplier decisions while measuring adoption, productivity, cost, and financial outcomes.
 - Advising executives and working credibly with engineers, analysts, finance, risk, legal, and operations teams to move ambiguous initiatives into execution.
 
+ENTREPRENEURIAL LEADERSHIP & CODE ECOSYSTEM:
+Entrepreneur and Co-Founder of My Code Experience & Research, building a connected platform and ecosystem across technology, commerce, wellness, research, apparel, coaching, and digital products.
+- Built CODE OS as a webOS and appOS platform and command center connecting the broader CODE ecosystem, member experiences, commerce, training, and operational workflows.
+- Developed advanced apparel and clothing experiences under CODE Style, including product strategy, catalog operations, sizing, creative direction, and commerce pathways.
+- Built and operated connected offerings across supplements, research peptides, online coaching and training, hair and skin products, and drop shipping.
+- Directed numerous API management items across identity, commerce, catalog, product, payment, social, CRM, fulfillment, and platform integrations.
+- Connected product, service, and research experiences through shared governance, data, orchestration, and customer journeys across the Experience site, Research site, webOS, and appOS.
+
+PUBLIC CODE DESTINATIONS:
+Experience site: https://mycodeexperience.com/
+Research site: https://mycodeexperiencepeptides.com/
+CODE staging site: https://staging.mycodeexperience.com/
+CODE OS staging preview: https://staging.mycodeexperience.com/en/code-os/preview/
+
 SKILLS:
 AI Strategy, Machine Learning, Deep Learning, Digital Transformation, Enterprise Portfolio Governance
 Revenue Growth, Cost Optimization, OPEX Optimization
