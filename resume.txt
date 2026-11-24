@@ -44,6 +44,12 @@ Entrepreneur and Co-Founder of My Code Experience & Research, building a connect
 - Directed API management across identity, commerce, catalog, product, payment, social, CRM, fulfillment, and platform integrations.
 - Connected product, service, and research experiences through shared governance, data, orchestration, and customer journeys across the Experience site, Research site, webOS, and appOS.
 
+MOBILE, WEB & DEVELOPER TOOLING:
+- Built and maintained CODE appOS experiences using VS Code, Expo, and EAS workflows.
+- Prepared iOS and Android application builds, emulator testing, app configuration, signing, and release workflows for CODE appOS.
+- Connected mobile appOS work with the broader CODE webOS and Experience ecosystem through shared APIs, identity, member journeys, and platform services.
+- Combined hands-on product engineering with executive strategy, using modern developer tooling to move ideas from a working prototype toward a deployable application.
+
 PUBLIC CODE DESTINATIONS:
 Experience site: https://mycodeexperience.com/
 Research site: https://mycodeexperiencepeptides.com/

@@ -7,11 +7,11 @@
       "What is your dog’s name",
       "What is your dog's name"
     ],
-    "answer": "Eli’s my dog. What would you like to know about him?",
+    "answer": "Eli is my dog, a Schnauzer with a big personality. He loves watching cartoons all day, and he is always ready for lots of walks. He also enjoys Starbucks pup cups, and I like dressing him up for events.",
     "evidence": [
       {
         "file": "about_me.txt",
-        "quote": "Eli is my dog, a schnauzer who loves to talk."
+        "quote": "Eli is my dog, a Schnauzer with a big personality. He loves watching cartoons all day, and he is always ready for lots of walks."
       }
     ]
   },
@@ -21,17 +21,20 @@
       "Who are you",
       "Give me a quick overview"
     ],
-  "answer": "My name is Joseph. I work at the intersection of strategy, business transformation, AI, and entrepreneurship. I am passionate about making sure academia and industry standards are shaped by the people driving innovation and transformation in their respective areas. There is always something new to learn, and I genuinely enjoy continued learning and study. I also created My Code Experience, a health and fitness platform and ecosystem built around the consistent, disciplined lifestyle I work to live. You will often find me strength training, practicing yoga, or doing gymnastics. I am hands-on too - I build systems, not just plans.",
+  "answer": "I work at the intersection of strategy, business transformation, AI, and entrepreneurship. I enjoy turning complex ideas into useful systems, and I am hands-on enough to build the product as well as shape the strategy. Through My Code Experience, I have been building a connected health and fitness ecosystem, CODE OS webOS, and CODE appOS using tools such as VS Code, Expo, and iOS and Android development workflows. Outside of work, I stay active through strength training, yoga, and gymnastics, and I genuinely enjoy continued learning.",
     "evidence": [
       {
-        "file": "resume.txt",
-      "file": "about_me.txt",
-      "quote": "My name is Joseph. I am passionate about making sure academia and industry standards are shaped by the people driving innovation and transformation"
+        "file": "about_me.txt",
+        "quote": "My name is Joseph. I enjoy conversations about how people, technology, academia, and industry can work together to turn good ideas into useful outcomes."
       },
       {
       "file": "about_me.txt",
-      "quote": "I created My Code Experience, a platform and ecosystem centered on health and fitness"
+      "quote": "I am also an entrepreneur and hands-on builder. I created My Code Experience, a platform and ecosystem centered on health and fitness"
     },
+      {
+        "file": "resume.txt",
+        "quote": "Built and maintained CODE appOS experiences using VS Code, Expo, and EAS workflows."
+      },
     {
       "file": "about_me.txt",
       "quote": "You will often find me strength training, practicing yoga, or doing gymnastics."
@@ -106,11 +109,11 @@
       "What do you enjoy outside of work",
       "Tell me about your personal interests"
     ],
-  "answer": "I live fitness, so I find myself doing some form of movement all the time. I also love hanging out with my dog, Eli, a schnauzer who loves to talk. We go to Starbucks for pup cups, and I dress him up for events.",
+  "answer": "I live fitness, so I find myself doing some form of movement all the time. I also love hanging out with my dog, Eli, a Schnauzer with a big personality. He loves watching cartoons all day and going on lots of walks. We still enjoy Starbucks pup cups, and I dress him up for events.",
     "evidence": [
       {
         "file": "about_me.txt",
-      "quote": "Eli is my dog, a schnauzer who loves to talk."
+      "quote": "Eli is my dog, a Schnauzer with a big personality. He loves watching cartoons all day, and he is always ready for lots of walks."
     },
     {
       "file": "about_me.txt",

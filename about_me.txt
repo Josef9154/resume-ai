@@ -1,12 +1,11 @@
 PERSONAL PROFILE
 
 ABOUT JOSEPH:
-My name is Joseph. I am passionate about making sure academia and industry standards are shaped by the people driving innovation and transformation in their respective areas. There is always something new to learn, and I genuinely enjoy continued learning and study.
-I am also an entrepreneur. I created My Code Experience, a platform and ecosystem centered on health and fitness that supports the consistent, disciplined lifestyle I work to live. You will often find me strength training, practicing yoga, or doing gymnastics.
+My name is Joseph. I enjoy conversations about how people, technology, academia, and industry can work together to turn good ideas into useful outcomes. I am passionate about making sure the standards that shape innovation and transformation are informed by the people doing the work. There is always something new to learn, and I genuinely enjoy continued learning and study.
+I am also an entrepreneur and hands-on builder. I created My Code Experience, a platform and ecosystem centered on health and fitness that supports the consistent, disciplined lifestyle I work to live. I have been building the CODE Experience ecosystem, CODE OS webOS, and CODE appOS with modern tools including VS Code, Expo, and iOS and Android development workflows. You will often find me strength training, practicing yoga, or doing gymnastics.
 
 ELI:
-Eli is my dog, a schnauzer who loves to talk.
-We enjoy going to Starbucks for pup cups, and I dress him up for events.
+Eli is my dog, a Schnauzer with a big personality. He loves watching cartoons all day, and he is always ready for lots of walks. He also enjoys Starbucks pup cups, and I like dressing him up for events.
 
 FITNESS:
 Fitness is a constant in my life. I find myself doing some form of movement all the time.
