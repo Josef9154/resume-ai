@@ -46,8 +46,12 @@
       "What are your greatest accomplishments",
       "What are your biggest achievements"
     ],
-    "answer": "A few results stand out: about $1.2B in digital revenue impact, an average of $300M in annual cost savings, and leading a portfolio of roughly 300 products and services.",
+    "answer": "A few results stand out: owning more than 2,000 business cases, models, and performance-management results as a strategic innovation and transformation governance owner; about $1.2B in digital revenue impact; an average of $300M in annual cost savings; and leading a portfolio of roughly 300 products and services.",
     "evidence": [
+      {
+        "file": "resume.txt",
+        "quote": "Owned more than 2,000 business cases, models, and performance-management results as a strategic innovation and transformation governance owner."
+      },
       {
         "file": "resume.txt",
         "quote": "~$1.2B in digital revenue impact"
